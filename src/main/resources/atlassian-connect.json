@@ -1,6 +1,6 @@
 {
   "key": "tbc-cloud",
-  "baseUrl": "https://804dbebddadc48.lhr.life",
+  "baseUrl": "https://tempo-bulk-change-cloud-gh.onrender.com",
   "name": "Tempo Bulk Change plugin - cloud version",
   "authentication": {
     "type": "jwt"
