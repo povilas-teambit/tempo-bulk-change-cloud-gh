@@ -1,0 +1,36 @@
+{
+  "key": "tbc-cloud",
+  "baseUrl": "https://804dbebddadc48.lhr.life",
+  "name": "Tempo Bulk Change plugin - cloud version",
+  "authentication": {
+    "type": "jwt"
+  },
+  "apiMigrations": {
+    "context-qsh": true
+  },
+  "lifecycle": {
+    "installed": "/installed",
+    "uninstalled": "/uninstalled"
+  },
+  "scopes": ["READ", "PROJECT_ADMIN", "ACT_AS_USER"],
+  "modules": {
+    "webhooks": [
+      {
+        "event": "worklog_created",
+        "url": "/webhook/worklog-created",
+        "excludeBody" : false,
+        "filter" : "project = TBC"
+      }
+    ],
+    "generalPages": [
+      {
+        "url": "/tempo-bulk-change",
+        "location": "system.top.navigation.bar",
+        "name": {
+          "value": "Tempo Bulk Change"
+        },
+        "key": "tempo-bulk-change"
+      }
+    ]
+  }
+}
