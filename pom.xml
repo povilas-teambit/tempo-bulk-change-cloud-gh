@@ -9,7 +9,7 @@
     </parent>
 
     <groupId>lt.teambit.jira.plugins</groupId>
-    <artifactId>tbc</artifactId>
+    <artifactId>tbc-c</artifactId>
     <version>1.0.0</version>
 
     <properties>
